@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  // sum of series 1 - 2 + 3 - 4 ... n term.
+  int n, sum = 0;
+  cout << "Enter: ";
+  cin >> n;
+  for (int i = 1; i <= n; i++)
+  {
+    if (i % 2 == 0)
+    {
+      sum -= i;
+    }
+    else
+    {
+      sum += i;
+    }
+  }
+  cout << sum;
+  return 0;
+}
